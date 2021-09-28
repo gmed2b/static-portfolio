@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
 /* Custom ScrollBar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -25,15 +27,15 @@ body {
   font-family: 'JetBrains Mono', sans-serif;
 }
 header {
-  background-color: aquamarine;
   height: 100vh;
+  background-color: bisque;
 }
 
 
 /* Navbar */
 .navbar {
-  background-color: rgba(58, 179, 138, .3);
-  height: 5%;
+  background-color: rgb(255, 255, 255);
+  height: 8%;
   display: flex;
   justify-content: space-between;
   /* padding: 15px 0; */
@@ -51,25 +53,19 @@ header {
 .nav-item {
   list-style-type: none;
   margin-right: 20px;
+  border: 2px solid rgb(55, 148, 255);
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #111;
 }
 
 
 /* Container grid for social & about */
 .header-container {
-  background-color: brown;
-  height: 95%;
+  height: 92%;
   display: grid;
   grid-template-columns: .3fr 1fr;
   grid-template-rows: .3fr .6fr;
-}
-
-/* Social */
-.social {
-  background-color: cadetblue;
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  display: flex;
-  align-items: flex-end;
 }
 
 /* About */
@@ -78,7 +74,7 @@ header {
   grid-column: 2 / 3;
   display: flex;
   align-items: flex-end;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .about-title-text {
   grid-row: 2 / 3;
@@ -88,7 +84,16 @@ header {
   font-size: 4rem;
 }
 .about-text {
-  width: 50%;
+  width: 60%;
   font-size: 1.1rem;
 }
 
+/* Social */
+.social {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  display: flex;
+}
+.social-item {
+  margin-bottom: 20px;
+}
