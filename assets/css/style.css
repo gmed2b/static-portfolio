@@ -97,3 +97,10 @@ header {
 .social-item {
   margin-bottom: 20px;
 }
+
+
+/* Footer */
+footer {
+  height: 20vh;
+  background-color: #000;
+}
