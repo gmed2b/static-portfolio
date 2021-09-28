@@ -1,0 +1,94 @@
+/* Custom ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, .2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(69, 69, 69, .2); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, .3); 
+}
+
+/* Basic Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+  overflow: overlay;
+  font-family: 'JetBrains Mono', sans-serif;
+}
+header {
+  background-color: aquamarine;
+  height: 100vh;
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: rgba(58, 179, 138, .3);
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 15px 0; */
+}
+.logo {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+.nav-items {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+
+/* Container grid for social & about */
+.header-container {
+  background-color: brown;
+  height: 95%;
+  display: grid;
+  grid-template-columns: .3fr 1fr;
+  grid-template-rows: .3fr .6fr;
+}
+
+/* Social */
+.social {
+  background-color: cadetblue;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* About */
+.about-subtitle {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.5rem;
+}
+.about-title-text {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.about-title {
+  font-size: 4rem;
+}
+.about-text {
+  width: 50%;
+  font-size: 1.1rem;
+}
+
