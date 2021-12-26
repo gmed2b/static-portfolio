@@ -1,155 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Come check my personal portfolio ;)">
+  <meta name="description" content="Check my personal portfolio ;)">
   <title>Mehdi's Portfolio</title>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script defer src="./main.js"></script>
 </head>
 
 <body>
+  <div class="shape blob-right-corner"></div>
+  <div class="shape blob-left-side"></div>
+  <div class="shape video-game-hex"></div>
+  <div class="shape code-hex"></div>
 
-  <header>
-    <div class="navbar-container">
-      <div class="navbar-logo">
-        <a href="index.html">
-          <img src="./assets/img/logo.png" alt="logo">
-        </a>
-      </div>
-      <navbar>
-        <ul class="list-item">
-          <li class="item">
-            <a href="#">
-              &lt;<span class="secondary-color">01</span>
-              Projects
-              <span class="secondary-color">&sol;</span>
-              &#62;
-            </a>
-          </li>
-          <li class="item">
-            <a href="#">
-              &lt;<span class="secondary-color">02</span>
-              About Me
-              <span class="secondary-color">&sol;</span>
-              &#62;
-            </a>
-          </li>
-          <li class="item">
-            <a href="#">
-              &lt;<span class="secondary-color">03</span>
-              Formations
-              <span class="secondary-color">&sol;</span>
-              &#62;
-            </a>
-          </li>
-          <li class="item">
-            <a href="#">
-              &lt;<span class="secondary-color">04</span>
-              Contact
-              <span class="secondary-color">&sol;</span>
-              &#62;
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              &lt;<span class="secondary-color">05</span>
-              Resume
-              <span class="secondary-color">&sol;</span>
-              &#62;
-            </a>
-          </li>
-        </ul>
-      </navbar>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <div class="shape logo-hex"></div>
+      <a href="index.html">
+        <!-- <img src="./assets/img/logo.png" alt="logo"> -->
+        M<span class="custom-color">Ǝ</span>D
+      </a>
     </div>
-
-    <div class="title-container">
-      <div class="subtitle">
-        <h2>Hi, I'm</h2>
-      </div>
-      <div class="title">
-        <h1>Mehdi Ghoulam</h1>
-      </div>
-      <div class="catchphrase">
-        <p>
-          Student at <span class="secondary-color">Corte</span> <br>
-          in BUT MMI
-        </p>
-      </div>
-    </div>
-
-    <div class="social-container">
-      <ul class="list-item">
+    <div class="navbar-links">
+      <a href="#" id="navbar-menu" class="navbar-menu">
+        <i class="material-icons-round">menu</i>
+      </a>
+      <ul id="navbar-list-item" class="list-item">
         <li class="item">
-          <a href="">
-            <img src="./assets/img/social_icons/github.svg" alt="Github's icon">
+          <a href="#projects">
+            &lt;<span class="custom-color">01</span>
+            Projects&gt;
           </a>
         </li>
         <li class="item">
-          <a href="">
-            <img src="./assets/img/social_icons/twitter.svg" alt="Twitter's icon">
+          <a href="#about-me">
+            &lt;<span class="custom-color">02</span>
+            About Me&gt;
           </a>
         </li>
         <li class="item">
-          <a href="">
-            <img src="./assets/img/social_icons/instagram.svg" alt="Instagram's icon">
-          </a>
-        </li>
-        <li class="item">
-          <a href="">
-            <img src="./assets/img/social_icons/snapchat.svg" alt="Snapchat's icon">
+          <a href="#contact-me">
+            &lt;<span class="custom-color">03</span>
+            Contact&gt;
           </a>
         </li>
       </ul>
     </div>
+  </nav>
+
+  <header>
+    <div class="hero-container">
+      <h2 class="subtitle custom-color">Hi, I'm</h2>
+      <h1 class="title">Mehdi Ghoulam</h1>
+      <p class="catchphrase">
+        MMI student at <span class="custom-color">Corte</span>
+      </p>
+    </div>
 
     <div class="cta-container">
-      <button>
+      <a href="#projects" class="cta-button">
         <span class="material-icons-round">
           keyboard_double_arrow_down
         </span>
-        Scroll Down
+      </a>
+    </div>
+
+    <div class="go-top-container">
+      <button id="go-top-button" class="go-top-button">
+        <span class="material-icons-round">
+          keyboard_arrow_up
+        </span>
       </button>
     </div>
   </header>
 
-  <main>
+  <div class="spacer header-separation"></div>
+  <div class="spacer header-separation-2"></div>
 
-    <section class="featured-project">
-      <div class="project-hero">
-        <h3 class="project-headline">Featured project</h3>
-        <div class="project-title">
-          <h1>Webgestion</h1>
-          <p>By Unigest</p>
+  <main>
+    <section id="projects" class="featured-project">
+      <div class="project-text-container">
+        <div class="project-hero hero">
+          <h3 class="headline">Featured project</h3>
+          <div class="title">
+            <h2>Webgestion</h2>
+            <p>By Unigest</p>
+          </div>
+        </div>
+        <div class="project-desc desc">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae fuga nihil eveniet quidem id, illo
+            tenetur
+            rerum assumenda. Laboriosam ipsam eveniet a exercitationem, nesciunt quia!
+          </p>
         </div>
       </div>
-      <div class="project-desc">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae fuga nihil eveniet quidem id, illo tenetur
-          rerum assumenda. Laboriosam ipsam eveniet a exercitationem, nesciunt quia!
-        </p>
-      </div>
       <div class="project-image">
-        <img src="./assets/img/webgestion.png" alt="Webgestion's website">
+        <img id="unigest-small-image" src="./assets/img/unigest-fr-small.jpg" alt="Unigest website small image">
+        <img id="unigest-full-image" class="no-display" src="./assets/img/unigest-fr.png"
+          alt="Unigest website full image">
       </div>
+      <div class="blue-bg"></div>
     </section>
 
     <section class="projects">
-      <div class="title">
-        <h1>Main Project</h1>
-      </div>
+      <h2 class="title">
+        <span>Main</span> Project
+      </h2>
       <div class="project-list">
         <div class="card">
-          <div class="card-image">
-            <img src="./assets/img/webgestion.png" alt="Webgestion's website">
-          </div>
-          <div class="card-desc">
-            <h3>Webgestion</h3>
-            <p>
+          <div class="card-body">
+            <div class="card-icon">
+              <span class="material-icons-round">badge</span>
+            </div>
+            <h3 class="card-title">Amser</h3>
+            <p class="card-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga nihil eveniet quidem id, illo
               tenetur
               rerum assumenda. Laboriosam ipsam eveniet a exercitationem, nesciunt quia!
@@ -157,12 +129,12 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image">
-            <img src="./assets/img/webgestion.png" alt="Webgestion's website">
-          </div>
-          <div class="card-desc">
-            <h3>Webgestion</h3>
-            <p>
+          <div class="card-body">
+            <div class="card-icon">
+              <span class="material-icons-round">qr_code_scanner</span>
+            </div>
+            <h3 class="card-title">Toucheat</h3>
+            <p class="card-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga nihil eveniet quidem id, illo
               tenetur
               rerum assumenda. Laboriosam ipsam eveniet a exercitationem, nesciunt quia!
@@ -170,12 +142,12 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image">
-            <img src="./assets/img/webgestion.png" alt="Webgestion's website">
-          </div>
-          <div class="card-desc">
-            <h3>Webgestion</h3>
-            <p>
+          <div class="card-body">
+            <div class="card-icon">
+              <span class="material-icons-round">today</span>
+            </div>
+            <h3 class="card-title">Agenda</h3>
+            <p class="card-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga nihil eveniet quidem id, illo
               tenetur
               rerum assumenda. Laboriosam ipsam eveniet a exercitationem, nesciunt quia!
@@ -185,92 +157,117 @@
       </div>
     </section>
 
-    <section class="about-me">
-      <div class="about-desc">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti unde suscipit architecto placeat nesciunt
-          provident animi doloribus cupiditate doloremque, eaque, consequuntur dolor perferendis? Corrupti soluta
-          aperiam quos enim praesentium quas, qui pariatur perferendis, odio commodi aut exercitationem voluptates ut
-          labore deleniti tempore nostrum ea cum.
-        </p>
+    <div class="spacer peaks"></div>
+
+    <section id="about-me" class="about-me">
+      <div class="about-text-container">
+        <div class="about-desc desc">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti unde suscipit architecto placeat nesciunt
+            provident animi doloribus cupiditate doloremque, eaque, consequuntur dolor perferendis? Corrupti soluta
+            aperiam quos enim praesentium quas, qui pariatur perferendis, odio commodi aut exercitationem voluptates ut
+            labore deleniti tempore nostrum ea cum.
+          </p>
+        </div>
+        <div class="about-hero hero">
+          <h3 class="headline">Personal</h3>
+          <div class="title">
+            <h2>About Me</h2>
+          </div>
+        </div>
       </div>
-      <div class="about-hero">
-        <h3 class="about-headline">Personal</h3>
-        <div class="about-title">
-          <h1>About Me</h1>
+
+      <div class="skills">
+        <h2 class="title">My Skills</h2>
+        <div class="skill-container">
+          <div class="skill">
+            <div class="skill-title">
+              <h3>HTML/CSS</h3>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-title">
+              <h3>JavaScript</h3>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 60%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-title">
+              <h3>PHP</h3>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 65%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-title">
+              <h3>Python</h3>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width: 70%;"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="skills">
-      <h2>My Skills</h2>
-      <div class="skill-container">
-        <div class="skill">
-          <div class="skill-title">
-            <h3>HTML/CSS</h3>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar-fill" style="width: 80%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill-title">
-            <h3>JavaScript</h3>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar-fill" style="width: 45%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill-title">
-            <h3>PHP</h3>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar-fill" style="width: 50%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill-title">
-            <h3>Python</h3>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-bar-fill" style="width: 75%;"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact">
+    <section id="contact-me" class="contact">
       <div class="contact-container">
-        <form action="#" method="post">
-          <div class="contact-title">
-            <h2>Contact Me</h2>
+        <form method="POST" id="contact-form" class="contact-form" autocomplete="off">
+          <h3 class="title">Contact Me</h3>
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" name="contact-name" id="contact-name" class="input-control" placeholder="Enter your name"
+              autocomplete="false" />
           </div>
-          <div class="contact-form">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Enter your email">
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" cols="25" rows="3" placeholder="Enter your message"></textarea>
-            </div>
-            <div class="form-group">
-              <button type="submit">Send</button>
-            </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" name="contact-email" id="contact-email" class="input-control"
+              placeholder="Enter your email" autocomplete="false" />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea name="contact-message" id="contact-message" class="input-control" cols="30" rows="5"
+              maxlength="300" placeholder="Enter your message" autocomplete="false"></textarea>
+          </div>
+          <div class="form-inline">
+            <p id="status-message" class="status-message pending-color"></p>
+            <button type="submit" name="submit" class="submit-button">Send</button>
           </div>
         </form>
       </div>
     </section>
-
   </main>
 
-  <footer>
-    <h4>Design & Built By Mehdi</h4>
+  <footer class="spacer peaks-footer">
+    <div class="social-container">
+      <ul class="list-item">
+        <li class="item">
+          <a href="https://github.com/gmed2b" target="_blank">
+            <img class="icon" src="./assets/img/social_icons/github.svg" alt="Github's icon">
+          </a>
+        </li>
+        <li class="item">
+          <a href="https://twitter.com/med_2b" target="_blank">
+            <img class="icon" src="./assets/img/social_icons/twitter.svg" alt="Twitter's icon">
+          </a>
+        </li>
+        <li class="item">
+          <a href="https://www.instagram.com/med_2b" target="_blank">
+            <img class="icon" src="./assets/img/social_icons/instagram.svg" alt="Instagram's icon">
+          </a>
+        </li>
+        <li class="item color-container">
+          <input type="color" name="color-selector" id="color-selector">
+        </li>
+      </ul>
+    </div>
+    <h4 class="author">Design & Built By Mehdi</h4>
   </footer>
 
 </body>
