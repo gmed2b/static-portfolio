@@ -112,7 +112,7 @@ contactForm.addEventListener('submit', (event) => {
   xhr.onload = () => {
     if(xhr.readyState == 4 && xhr.status === 200) {
       let response = JSON.parse(xhr.responseText);
-      if(response.success) {
+      if(response.status) {
         statusMessage.classList.remove('error-color');
         statusMessage.classList.add('pending-color');
         statusMessage.textContent = response.text;

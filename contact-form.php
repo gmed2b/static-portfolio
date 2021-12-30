@@ -9,49 +9,39 @@ function check_email($field) {
   }
 }
 
-// Get the posted data.
-$name = $_POST['contact-name'];
-$email = $_POST['contact-email'];
-$message = $_POST['contact-message'];
-
-if (!empty($name) && !empty($email) && !empty($message)) {
+if (isset($_POST['email']) && !empty($_POST['email'])) {
   // Check if valid email
   if (check_email($email)) {
+    // Get the posted data.
+    $name = $_POST['contact-name'];
+    $email = $_POST['contact-email'];
+    $message = $_POST['contact-message'];
+
     // send email
-    $receiver = "medghouly@gmail.com";
-    $sender = "From: $email";
+    $to = "medghouly@gmail.com";
     $subject = "From: $name <$email>";
-    if (mail($receiver, $subject, $message, $sender)) {
-      echo json_encode(
-        array(
-        'success' => true,
-        'text' => 'Your message has been sent successfully.'
-        )
-      );
-    } else {
-      echo json_encode(
-        array(
-        'success' => false,
-        'text' => 'Sorry, an error occurred while sending your message.'
-        )
-      );
+    if (mail($to, $subject, $message)) {
+      $server_status = true;
+      $server_text = 'Your message has been sent successfully.';
+    }
+    else {
+      $server_status = false;
+      $server_text = 'Sorry, an error occurred while sending your message.';
     }
   }
   else {
-    echo json_encode(
-      array(
-      'success' => false,
-      'text' => 'Enter a valid email address.'
-      )
-    );
+    $server_status = false;
+    $server_text = 'Enter a valid email address.';
   }
 }
 else {
-  echo json_encode(
-    array(
-    'success' => false,
-    'text' => 'Please fill in all the fields.'
-    )
-  );
-  exit;
+  $server_status = false;
+  $server_text = 'Please fill in all the fields.';
 }
+
+echo json_encode(
+  array(
+  'status' => $server_status,
+  'text' => $server_text
+  )
+);
