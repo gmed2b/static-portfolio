@@ -164,7 +164,7 @@ const skillBarsObserver = new IntersectionObserver(
     rootMargin: "-100px"
   }
 );
-let screen500 = window.matchMedia('(min-width: 500px)');
+let screen500 = window.matchMedia('(min-width: 780px)');
 screen500.addListener(observeSkillBar);
 observeSkillBar(screen500);
 

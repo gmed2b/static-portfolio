@@ -9,14 +9,14 @@ function check_email($field) {
   }
 }
 
-if (isset($_POST['email']) && !empty($_POST['email'])) {
+if (isset($_POST['contact-email']) && !empty($_POST['contact-email'])) {
+  // Get the posted data.
+  $name = $_POST['contact-name'];
+  $email = $_POST['contact-email'];
+  $message = $_POST['contact-message'];
+
   // Check if valid email
   if (check_email($email)) {
-    // Get the posted data.
-    $name = $_POST['contact-name'];
-    $email = $_POST['contact-email'];
-    $message = $_POST['contact-message'];
-
     // send email
     $to = "medghouly@gmail.com";
     $subject = "From: $name <$email>";

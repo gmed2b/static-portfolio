@@ -825,6 +825,11 @@ footer {
     padding: var(--side-padding) 0rem;
   }
 
+  .skill {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .contact-container::before {
     height: 7.5rem;
   }
