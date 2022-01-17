@@ -161,6 +161,8 @@ a {
   height: 11rem;
   background-image: url("../img/svg/shapes/video-game-hex.svg");
   z-index: 0;
+  animation: hex-anim-out .8s ease-in-out forwards;
+  -webkit-animation: hex-anim-out .8s ease-in-out forwards;
 }
 
 .code-hex {
@@ -171,14 +173,28 @@ a {
   height: 8rem;
   background-image: url("../img/svg/shapes/code-hex.svg");
   z-index: 0;
+  animation: hex-anim-out .8s ease-in-out forwards;
+  -webkit-animation: hex-anim-out .8s ease-in-out forwards;
 }
 .video-game-hex:hover,
 .code-hex:hover {
-  animation: hex-anim 800ms linear infinite;
+  animation: hex-anim-in .8s ease-in-out forwards;
+  -webkit-animation: hex-anim-in .8s ease-in-out forwards;
+}
+@keyframes hex-anim-out {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
-@keyframes hex-anim {
-  100% {
+@keyframes hex-anim-in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
     transform: rotate(360deg);
   }
 }
