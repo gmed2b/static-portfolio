@@ -9,6 +9,9 @@ function check_email($field) {
   }
 }
 
+$server_status = false;
+$server_text = 'Please fill in all the fields.';
+
 if (isset($_POST['contact-email']) && !empty($_POST['contact-email'])) {
   // Get the posted data.
   $name = $_POST['contact-name'];
@@ -33,10 +36,6 @@ if (isset($_POST['contact-email']) && !empty($_POST['contact-email'])) {
     $server_status = false;
     $server_text = 'Enter a valid email address.';
   }
-}
-else {
-  $server_status = false;
-  $server_text = 'Please fill in all the fields.';
 }
 
 echo json_encode(
