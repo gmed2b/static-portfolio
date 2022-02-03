@@ -757,6 +757,10 @@ footer {
   font-size: 16px;
 }
 
+.lang-flag:hover {
+  transform: scale(1.1);
+}
+
 /*
 * MEDIA QUERIES
 */
@@ -889,6 +893,12 @@ footer {
   .contact-container::before {
     height: 10rem;
   }
+
+  .code-hex,
+  .video-game-hex {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 780px) {
@@ -931,11 +941,6 @@ footer {
 @media screen and (max-width: 600px) {
   :root {
     --side-padding: 2rem;
-  }
-
-  .code-hex,
-  .video-game-hex {
-    display: none;
   }
 
   .blob-right-corner {

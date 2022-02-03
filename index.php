@@ -278,7 +278,7 @@
           <input type="color" name="color-selector" id="color-selector">
         </li>
         <li class="item lang-container">
-          <button id="lang-button" class="lang-button"><?php echo $lang; ?></button>
+          <img class="lang-flag" id="lang-button" src="./assets/img/svg/flags/<?php echo $lang == "en" ? "fr" : "en" ?>.svg" alt="<?php echo $lang == "en" ? "fr" : "en" ?>">
         </li>
       </ul>
     </div>

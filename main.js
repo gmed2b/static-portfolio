@@ -91,12 +91,12 @@ window.onscroll = () => {
 goTopButton.addEventListener("click", goTop);
 
 langButton.addEventListener("click", () => {
-  if (langButton.innerHTML === "en") {
+  if (langButton.getAttribute('alt') === "en") {
     // reload the page with 'fr' as the language in the url
-    window.location.href = "./index.php?lang=fr";
+    window.location.href = "./index.php?lang=en";
   } else {
     // reload the page with 'en' as the language in the url
-    window.location.href = "./index.php?lang=en";
+    window.location.href = "./index.php?lang=fr";
   }
 });
 
