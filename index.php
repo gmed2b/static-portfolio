@@ -1,5 +1,15 @@
+<?php
+  // take from the url the value of the variable "lang"
+  if(isset($_GET['lang'])){
+    $lang = $_GET['lang'];
+  }else{
+    $lang = 'en';
+  }
+  $path = "./assets/lang/{$lang}.json";
+  $lang_data = json_decode(file_get_contents($path), true);
+?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="<?php echo $lang ?>">
 
 <head>
   <meta charset="UTF-8">
@@ -40,19 +50,19 @@
         <li class="item">
           <a href="#projects">
             &lt;<span class="custom-color">01</span>
-            Projects&gt;
+            <?php echo $lang_data['navbar']['1'] ?>&gt;
           </a>
         </li>
         <li class="item">
           <a href="#about-me">
             &lt;<span class="custom-color">02</span>
-            About Me&gt;
+            <?php echo $lang_data['navbar']['2'] ?>&gt;
           </a>
         </li>
         <li class="item">
           <a href="#contact-me">
             &lt;<span class="custom-color">03</span>
-            Contact&gt;
+            <?php echo $lang_data['navbar']['3'] ?>&gt;
           </a>
         </li>
       </ul>
@@ -61,10 +71,10 @@
 
   <header>
     <div class="hero-container">
-      <h2 class="subtitle custom-color">Hi, I'm</h2>
+      <h2 class="subtitle custom-color"><?php echo $lang_data['hero_subtitle'] ?></h2>
       <h1 class="title">Mehdi Ghoulam</h1>
       <p class="catchphrase">
-        MMI student at <span class="custom-color">Corte</span>
+      <?php echo $lang_data['hero_catchphrase'] ?> <span class="custom-color">Corte</span>
       </p>
     </div>
 
@@ -92,10 +102,10 @@
     <section id="projects" class="featured-project">
       <div class="project-text-container">
         <div class="project-hero hero">
-          <h3 class="headline">Featured project</h3>
+          <h3 class="headline"><?php echo $lang_data['projet_headline'] ?></h3>
           <div class="title">
             <h2>Webgestion</h2>
-            <p>By Unigest</p>
+            <p><?php echo $lang_data['projet_title_p'] ?></p>
           </div>
         </div>
         <div class="project-desc desc text-font">
@@ -116,7 +126,7 @@
 
     <section class="projects text-font">
       <h2 class="title">
-        <span>Main</span> Project
+      <?php echo $lang_data['projets_title'] ?>
       </h2>
       <div class="project-list">
         <div class="card">
@@ -172,15 +182,15 @@
           </p>
         </div>
         <div class="about-hero hero">
-          <h3 class="headline">Personal</h3>
+          <h3 class="headline"><?php echo $lang_data['about_headline'] ?></h3>
           <div class="title">
-            <h2>About Me</h2>
+            <h2><?php echo $lang_data['about_title'] ?></h2>
           </div>
         </div>
       </div>
 
       <div class="skills">
-        <h2 class="title">My Skills</h2>
+        <h2 class="title"><?php echo $lang_data['skill_title'] ?></h2>
         <div class="skill-container">
           <div class="skill">
             <div class="skill-title">
@@ -221,25 +231,25 @@
     <section id="contact-me" class="contact">
       <div class="contact-container">
         <form method="POST" id="contact-form" class="contact-form" autocomplete="off">
-          <h3 class="title">Contact Me</h3>
+          <h3 class="title"><?php echo $lang_data['contact_title'] ?></h3>
           <div class="form-control">
-            <label for="contact-name">Name</label>
-            <input type="text" name="contact-name" id="contact-name" class="input-control" placeholder="Enter your name"
+            <label for="contact-name"><?php echo $lang_data['contact_name'] ?></label>
+            <input type="text" name="contact-name" id="contact-name" class="input-control" placeholder="<?php echo $lang_data['contact_name_placeholder'] ?>"
               autocomplete="off" />
           </div>
           <div class="form-control">
             <label for="contact-email">Email</label>
             <input type="email" name="contact-email" id="contact-email" class="input-control"
-              placeholder="Enter your email" autocomplete="off" />
+              placeholder="<?php echo $lang_data['contact_email_placeholder'] ?>" autocomplete="off" />
           </div>
           <div class="form-control">
             <label for="contact-message">Message</label>
             <textarea name="contact-message" id="contact-message" class="input-control" cols="30" rows="5"
-              maxlength="300" placeholder="Enter your message" autocomplete="off"></textarea>
+              maxlength="300" placeholder="<?php echo $lang_data['contact_message_placeholder'] ?>" autocomplete="off"></textarea>
           </div>
           <div class="form-inline">
             <p id="status-message" class="status-message pending-color"></p>
-            <button type="submit" name="submit" class="submit-button">Send</button>
+            <button type="submit" name="submit" class="submit-button"><?php echo $lang_data['contact_submit'] ?></button>
           </div>
         </form>
       </div>
@@ -267,9 +277,12 @@
         <li class="item color-container">
           <input type="color" name="color-selector" id="color-selector">
         </li>
+        <li class="item lang-container">
+          <button id="lang-button" class="lang-button"><?php echo $lang; ?></button>
+        </li>
       </ul>
     </div>
-    <h4 class="author">Design & Built By Mehdi</h4>
+    <h4 class="author"><?php echo $lang_data['footer_copyright'] ?></h4>
   </footer>
 
 </body>

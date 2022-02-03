@@ -1,0 +1,24 @@
+{
+  "navbar": {
+    "1": "Mes Projets",
+    "2": "À Propos",
+    "3": "Me contacter"
+  },
+  "hero_subtitle": "Salut, je suis",
+  "hero_catchphrase": "Etudiant MMI à",
+  "projet_headline": "Projet en cours",
+  "projet_title_p": "Par Unigest",
+  "projets_title": "Projets <span>principaux</span>",
+  "about_headline": "Personnel",
+  "about_title": "À propos",
+  "skill_title": "Mes compétances",
+  "contact_title": "Me contacter",
+  "contact_name": "Name",
+  "contact_name_placeholder": "Entrer votre nom",
+  "contact_email": "Email",
+  "contact_email_placeholder": "Entrer votre email",
+  "contact_message": "Message",
+  "contact_message_placeholder": "Entrer votre message",
+  "contact_submit": "Envoyer",
+  "footer_copyright": "Développé par Mehdi"
+}

@@ -725,7 +725,7 @@ footer {
   height: 8rem;
   border-radius: 2px;
   background-color: var(--custom-color);
-  transform: translate(230%, 190%);
+  transform: translate(230%, 220%);
 }
 .social-container .list-item {
   display: flex;
@@ -744,6 +744,17 @@ footer {
 .color-container #color-selector {
   width: 28px;
   height: 34px;
+}
+
+.lang-container {
+  width: 28px;
+  height: 34px;
+}
+.lang-button {
+  width: 100%;
+}
+.lang-button span {
+  font-size: 16px;
 }
 
 /*

@@ -1,0 +1,24 @@
+{
+  "navbar": {
+    "1": "Projects",
+    "2": "About Me",
+    "3": "Contact"
+  },
+  "hero_subtitle": "Hi, I'm",
+  "hero_catchphrase": "MMI student at",
+  "projet_headline": "Featured project",
+  "projet_title_p": "By Unigest",
+  "projets_title": "<span>Main</span> Project",
+  "about_headline": "Personal",
+  "about_title": "About Me",
+  "skill_title": "My Skills",
+  "contact_title": "Contact Me",
+  "contact_name": "Name",
+  "contact_name_placeholder": "Enter your name",
+  "contact_email": "Email",
+  "contact_email_placeholder": "Enter your email",
+  "contact_message": "Message",
+  "contact_message_placeholder": "Enter your message",
+  "contact_submit": "Send",
+  "footer_copyright": "Design & Built By Mehdi"
+}

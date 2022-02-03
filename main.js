@@ -4,6 +4,7 @@ let statusMessage = document.querySelector("#status-message");
 let unigestFullImage = document.querySelector("#unigest-full-image");
 let unigestSmallImage = document.querySelector("#unigest-small-image");
 let goTopButton = document.querySelector("#go-top-button");
+let langButton = document.querySelector("#lang-button");
 let navbarMenu = document.querySelector("#navbar-menu");
 let navbarListItem = document.querySelector("#navbar-list-item");
 let colorSelector = document.querySelector("#color-selector");
@@ -88,6 +89,16 @@ window.onscroll = () => {
 };
 
 goTopButton.addEventListener("click", goTop);
+
+langButton.addEventListener("click", () => {
+  if (langButton.innerHTML === "en") {
+    // reload the page with 'fr' as the language in the url
+    window.location.href = "./index.php?lang=fr";
+  } else {
+    // reload the page with 'en' as the language in the url
+    window.location.href = "./index.php?lang=en";
+  }
+});
 
 colorSelector.addEventListener("change", () => {
   rootElement.style.setProperty("--custom-color", colorSelector.value);
