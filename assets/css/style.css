@@ -26,7 +26,7 @@
   --side-padding: 6rem;
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 html {
@@ -483,6 +483,8 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
   gap: calc(var(--side-padding) / 2);
   overflow: hidden;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .card {
@@ -535,7 +537,7 @@ section {
 }
 .about-hero::before {
   transform: translate(50%, -35%);
-  background-image: url('../img/pp.jpg'), linear-gradient(to right, var(--background-secondary), var(--background-primary));
+  background-image: url('../img/pp.jpg');
   background-size: cover;
 }
 
@@ -551,6 +553,7 @@ section {
 }
 .skill-container {
   width: 100%;
+  max-width: 1000px;
 }
 .skill {
   display: flex;
