@@ -104,15 +104,14 @@
         <div class="project-hero hero">
           <h3 class="headline"><?php echo $lang_data['projet_headline'] ?></h3>
           <div class="title">
-            <h2>Webgestion</h2>
+            <h2>Développeur Web</h2>
             <p><?php echo $lang_data['projet_title_p'] ?></p>
           </div>
         </div>
         <div class="project-desc desc text-font">
           <p>
-            Webgestion, un logiciel Hybride pour la maintenance et la facturation.
-            Webgestion est un logiciel hybride en ligne. C'est une GMAO couplée à une gestion commerciale. Les deux
-            logiciels réunies travaillent en concert.
+            Débouchés professionnels : Le diplome s'insère à 90% en qualité de cadre. <br>
+            Personnelement, j'envisage de travailler dans l'entreprise familliale.
           </p>
         </div>
       </div>
@@ -134,7 +133,7 @@
             <div class="card-icon">
               <span class="material-icons-round">badge</span>
             </div>
-            <h3 class="card-title">Amser</h3>
+            <h3 class="card-title">DUT MMI - BAC +3</h3>
             <p class="card-desc">
               Amser est un logiciel permettant de gérer les flux des entrées et sorties dans un site à l'aide de son
               système de badge RFID. AMSER, la sécurité active sur votre site!
@@ -146,7 +145,7 @@
             <div class="card-icon">
               <span class="material-icons-round">qr_code_scanner</span>
             </div>
-            <h3 class="card-title">Toucheat</h3>
+            <h3 class="card-title">MASTER DFS</h3>
             <p class="card-desc">
               Touch Eat! La carte de votre restaurant favoris entre vos main. Toucheat permet d'acceder à la carte de
               votre restaurant en scannant le Qr-code placé sur la table.
